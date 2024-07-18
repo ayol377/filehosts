@@ -1,7 +1,7 @@
 $wallpaperUrl = "https://i.ibb.co/7CTy21R/Untitled.png"
 $rand = Get-Random -Maximum 100
 $imgName = "wall" + $rand + ".png"
-$wallpaperPath = "C:\Users\$Env:UserName\$imgname"
+$wallpaperPath = "C:\Users\$uname\$imgname"
 
 Invoke-WebRequest -O $wallpaperPath $wallpaperUrl
 
